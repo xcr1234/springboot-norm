@@ -22,4 +22,10 @@ public class CarController {
         return list;
     }
 
+    @RequestMapping("/carsByName")
+    public List<Car> carsByName(){
+        List<Car> list = carDao.findByName("哈弗h7");
+        return list;
+    }
+
 }
